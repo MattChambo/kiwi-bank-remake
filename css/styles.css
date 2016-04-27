@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	background-color: #EAEAEA;
 }
 
 nav {
@@ -102,6 +103,7 @@ nav ul {
 #products {
 	text-align: center;
 	padding: 10px;
+	background-color: white;
 }
 
 #products h1 {
@@ -167,18 +169,25 @@ span.limited {
 .percentage p span:last-child {
 	right: 28px;
 }
-@media all and (min-width: 600px) {
-
-	#mobile-banking {
-		display: none;
-	}
-}
 
 .percentage ul {
 	list-style: none;
 	color: #888888;
 	padding-left: 10px;
 }
+
+@media all and (min-width: 600px) {
+
+	#mobile-banking {
+		display: none;
+	}
+
+	#products {
+		width: 500px;
+		margin: 0 auto;
+	}
+}
+
 
 
 @media all and (min-width: 720px) {
@@ -253,6 +262,40 @@ span.limited {
 
 }
 
+@media all and (min-width: 860px) {
+
+	#products div:first-child {
+		width: 50%;
+		float: left;
+	}
+
+	#products {
+		width: auto;
+		max-width: 1346;
+		margin: 0 auto;
+		text-align: left;
+		position: relative;
+		padding: 0 120px 20px 120px;
+		box-sizing: border-box;
+	}
+
+	#products:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.percentage {
+		float: right;
+	}
+
+	.percentage + a {
+		position: absolute;
+		bottom: 10px;
+		right: 120px;
+	}
+}
+
 @media all and (min-width: 970px) {
 	nav a span {
 		display: inline;
@@ -276,5 +319,15 @@ span.limited {
 
 	#next {
 		right: 0;
+	}
+}
+
+@media all and (min-width: 1346px) {
+
+	#products,
+	#hero {
+		border-left: 1px solid #dddddd;
+		border-right: 1px solid #dddddd;
+		box-sizing: border-box;
 	}
 }
