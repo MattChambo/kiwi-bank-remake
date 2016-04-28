@@ -176,6 +176,26 @@ span.limited {
 	padding-left: 10px;
 }
 
+.left-collumn div,
+.right-collumn div {
+	font-family: arial;
+	padding: 30px;
+}
+
+
+.left-collumn h1,
+.right-collumn h1 {
+	font-size: 18px;
+}
+
+#promos img {
+	display: none;
+}
+
+#comments {
+	display: none;
+}
+
 @media all and (min-width: 600px) {
 
 	#mobile-banking {
@@ -185,6 +205,94 @@ span.limited {
 	#products {
 		width: 500px;
 		margin: 0 auto;
+	}
+
+	.left-collumn {
+		float: left;
+		width: 40%;
+		padding-bottom: 50px;
+	}
+
+	.right-collumn {
+		float: right;
+		width: 40%;
+		padding-bottom: 50px; 
+	}
+
+	.right-collumn div {
+		padding-bottom: 100px;
+	}
+
+	#promos {
+		max-width: 1346px;
+		margin: 0 auto;
+	}
+
+	#promos:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	#comments {
+		display: block;
+		width: 100%;
+		background-color: white;
+		max-width: 1346px;
+		margin: 0 auto;
+	}
+
+	#comments h1,
+	#comments a {
+		text-align: center;
+	}
+
+	#comments h1 {
+		margin-top: 50px; 
+	}
+
+	#comments a {
+		text-decoration: none;
+		padding: 10px; 
+	}
+
+	#left-box,
+	#right-box {
+		width: 45%;
+		margin: 5px;
+	}
+
+	#comments p:last-child {
+		text-align: center;
+		clear: both;
+	}
+
+	#left-box:after,
+	#right-box:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	#left-box {
+		float: left;
+	}
+
+	#right-box {
+		float: right;
+		margin-bottom: 30px;
+	}
+
+	#boxes {
+		width:60%;
+		margin: 0 auto;
+	}
+
+	.quote {
+		background-color: #ccffcc;
+		border-radius: 5px;
+		padding: 5px;
+		box-sizing: border-box;
 	}
 }
 
@@ -304,6 +412,25 @@ span.limited {
 	nav li {
 		padding: 0 15px;
 	}
+
+	#promos img {
+		float: left;
+		display: inline-block;
+		padding-right: 20px;
+		margin-bottom: 200px;
+	}
+
+
+	.article {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.right-collumn div {
+		padding-bottom: 80px;
+	}
+
 }
 
 @media all and (min-width: 1020px) {
